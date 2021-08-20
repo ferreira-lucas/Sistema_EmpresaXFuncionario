@@ -222,7 +222,7 @@ public class CadFuncionarios extends javax.swing.JInternalFrame {
                 MaskFormatter mask = new MaskFormatter("R$**********");
                 mask.install(jFTFSalario);
             }else if(opcao == 2){
-                salario = Double.parseDouble(jFTFSalario.getText().replace("R$", "").replace(",", ".").replace(" ", ""));
+                salario = Double.parseDouble(jFTFSalario.getText().replace("R$", "").replace(".", "").replace(",", ".").replace(" ", ""));
             }
         } catch (ParseException ex) {
             Logger.getLogger(CadEmpresas.class.getName()).log(Level.SEVERE, null, ex);
